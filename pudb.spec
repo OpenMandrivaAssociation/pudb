@@ -16,7 +16,6 @@ BuildArch:	noarch
 Requires:	python-urwid >= 0.9.8.4
 Requires:	python-pygments >= 1.0
 BuildRequires:	python-setuptools
-%py_requires -d 
 
 %description
 PuDB is a full-screen, console-based visual debugger for Python.
@@ -39,7 +38,7 @@ Turbo Pascal or C tools, PuDB's UI might look familiar.
 %clean
 %__rm -rf %{buildroot}
 
-%files -f FILE_LIST
+%files
 %defattr(-,root,root)
 %_bindir/pudb
-
+%py_puresitedir/*
