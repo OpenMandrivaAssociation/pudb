@@ -1,5 +1,5 @@
 %define name	pudb
-%define version	0.92.15
+%define version	0.93.1
 %define release %mkrel 1
 
 Summary:	Full-screen, console-based visual debugger for Python
@@ -13,7 +13,7 @@ Group:		Development/Python
 Url:		http://pypi.python.org/pypi/pudb/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
-Requires:	python-urwid >= 0.9.8.4
+Requires:	python-urwid >= 0.9.9.1
 Requires:	python-pygments >= 1.0
 BuildRequires:	python-setuptools
 
@@ -30,7 +30,7 @@ Turbo Pascal or C tools, PuDB's UI might look familiar.
 
 %install
 %__rm -rf %{buildroot}
-%__python setup.py install --root=%{buildroot} --record=FILE_LIST
+PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record=FILE_LIST
 
 %__mkdir -p %{buildroot}%{_bindir}
 %__install -m 755 %SOURCE1 %{buildroot}%{_bindir}
