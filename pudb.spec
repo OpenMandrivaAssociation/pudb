@@ -1,5 +1,5 @@
 %define name	pudb
-%define version	0.93.1
+%define version	2011.1
 %define release %mkrel 1
 
 Summary:	Full-screen, console-based visual debugger for Python
