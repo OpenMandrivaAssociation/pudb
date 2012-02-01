@@ -1,5 +1,5 @@
 %define name	pudb
-%define version	2011.3.1
+%define version	2012.1
 %define release %mkrel 1
 
 Summary:	Full-screen, console-based visual debugger for Python
@@ -13,7 +13,7 @@ Group:		Development/Python
 Url:		http://pypi.python.org/pypi/pudb/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
-Requires:	python-urwid >= 0.9.9.1
+Requires:	python-urwid >= 0.9.9.2
 Requires:	python-pygments >= 1.0
 BuildRequires:	python-setuptools
 
