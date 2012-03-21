@@ -1,6 +1,6 @@
 %define name	pudb
 %define version	2012.1
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:	Full-screen, console-based visual debugger for Python
 Name:		%{name}
@@ -8,6 +8,7 @@ Version:	%{version}
 Release:	%{release}
 Source0:	%{name}-%{version}.tar.gz
 Source1:	pudb
+Patch0:		setup.patch
 License:	MIT
 Group:		Development/Python
 Url:		http://pypi.python.org/pypi/pudb/
@@ -27,6 +28,7 @@ Turbo Pascal or C tools, PuDB's UI might look familiar.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %install
 %__rm -rf %{buildroot}
