@@ -1,12 +1,17 @@
 %define name	pudb
-%define version	2012.1
-%define release %mkrel 2
+%define version	2012.2.1
+%define	rel		1
+%if %mdkversion < 201100
+%define release %mkrel %rel
+%else
+%define	release	%rel
+%endif
 
 Summary:	Full-screen, console-based visual debugger for Python
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://pypi.python.org/packages/source/p/%{name}/%{name}-%{version}.tar.gz
 Source1:	pudb
 Patch0:		setup.patch
 License:	MIT
