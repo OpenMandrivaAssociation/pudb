@@ -1,5 +1,5 @@
 %define name	pudb
-%define version	2012.2.1
+%define version	2012.3
 %define	rel		1
 %if %mdkversion < 201100
 %define release %mkrel %rel
