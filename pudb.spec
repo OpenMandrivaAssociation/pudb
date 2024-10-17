@@ -16,7 +16,7 @@ Source1:	pudb
 Patch0:		setup.patch
 License:	MIT
 Group:		Development/Python
-Url:		http://pypi.python.org/pypi/pudb/
+Url:		https://pypi.python.org/pypi/pudb/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 Requires:	python-urwid >= 0.9.9.2
