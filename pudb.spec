@@ -1,5 +1,5 @@
 %define name	pudb
-%define version	2012.3
+%define version	2025.1.5
 %define	rel		1
 %if %mdkversion < 201100
 %define release %rel.1
@@ -33,7 +33,7 @@ Turbo Pascal or C tools, PuDB's UI might look familiar.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch -P0 -p1
 
 %install
 %__rm -rf %{buildroot}
